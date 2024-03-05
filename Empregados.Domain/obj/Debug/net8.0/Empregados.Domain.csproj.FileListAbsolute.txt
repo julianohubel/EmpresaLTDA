@@ -1,0 +1,11 @@
+D:\projetos\EmpresaLTDA\Empregados.Domain\obj\Debug\net8.0\Empregados.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\projetos\EmpresaLTDA\Empregados.Domain\obj\Debug\net8.0\Empregados.Domain.AssemblyInfoInputs.cache
+D:\projetos\EmpresaLTDA\Empregados.Domain\obj\Debug\net8.0\Empregados.Domain.AssemblyInfo.cs
+D:\projetos\EmpresaLTDA\Empregados.Domain\obj\Debug\net8.0\Empregados.Domain.csproj.CoreCompileInputs.cache
+D:\projetos\EmpresaLTDA\Empregados.Domain\bin\Debug\net8.0\Empregados.Domain.deps.json
+D:\projetos\EmpresaLTDA\Empregados.Domain\bin\Debug\net8.0\Empregados.Domain.dll
+D:\projetos\EmpresaLTDA\Empregados.Domain\bin\Debug\net8.0\Empregados.Domain.pdb
+D:\projetos\EmpresaLTDA\Empregados.Domain\obj\Debug\net8.0\Empregados.Domain.dll
+D:\projetos\EmpresaLTDA\Empregados.Domain\obj\Debug\net8.0\refint\Empregados.Domain.dll
+D:\projetos\EmpresaLTDA\Empregados.Domain\obj\Debug\net8.0\Empregados.Domain.pdb
+D:\projetos\EmpresaLTDA\Empregados.Domain\obj\Debug\net8.0\ref\Empregados.Domain.dll

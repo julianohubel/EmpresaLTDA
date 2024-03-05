@@ -1,0 +1,15 @@
+D:\projetos\EmpresaLTDA\Empregados.Domain.Infra\bin\Debug\net8.0\Empregados.Domain.Infra.deps.json
+D:\projetos\EmpresaLTDA\Empregados.Domain.Infra\bin\Debug\net8.0\Empregados.Domain.Infra.dll
+D:\projetos\EmpresaLTDA\Empregados.Domain.Infra\bin\Debug\net8.0\Empregados.Domain.Infra.pdb
+D:\projetos\EmpresaLTDA\Empregados.Domain.Infra\bin\Debug\net8.0\Empregados.Domain.dll
+D:\projetos\EmpresaLTDA\Empregados.Domain.Infra\bin\Debug\net8.0\Empregados.Domain.pdb
+D:\projetos\EmpresaLTDA\Empregados.Domain.Infra\obj\Debug\net8.0\Empregados.Domain.Infra.csproj.AssemblyReference.cache
+D:\projetos\EmpresaLTDA\Empregados.Domain.Infra\obj\Debug\net8.0\Empregados.Domain.Infra.GeneratedMSBuildEditorConfig.editorconfig
+D:\projetos\EmpresaLTDA\Empregados.Domain.Infra\obj\Debug\net8.0\Empregados.Domain.Infra.AssemblyInfoInputs.cache
+D:\projetos\EmpresaLTDA\Empregados.Domain.Infra\obj\Debug\net8.0\Empregados.Domain.Infra.AssemblyInfo.cs
+D:\projetos\EmpresaLTDA\Empregados.Domain.Infra\obj\Debug\net8.0\Empregados.Domain.Infra.csproj.CoreCompileInputs.cache
+D:\projetos\EmpresaLTDA\Empregados.Domain.Infra\obj\Debug\net8.0\Empregad.71A63101.Up2Date
+D:\projetos\EmpresaLTDA\Empregados.Domain.Infra\obj\Debug\net8.0\Empregados.Domain.Infra.dll
+D:\projetos\EmpresaLTDA\Empregados.Domain.Infra\obj\Debug\net8.0\refint\Empregados.Domain.Infra.dll
+D:\projetos\EmpresaLTDA\Empregados.Domain.Infra\obj\Debug\net8.0\Empregados.Domain.Infra.pdb
+D:\projetos\EmpresaLTDA\Empregados.Domain.Infra\obj\Debug\net8.0\ref\Empregados.Domain.Infra.dll
