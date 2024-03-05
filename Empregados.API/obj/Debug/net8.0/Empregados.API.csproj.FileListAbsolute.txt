@@ -29,3 +29,4 @@ D:\projetos\EmpresaLTDA\Empregados.API\obj\Debug\net8.0\Empregados.API.genruntim
 D:\projetos\EmpresaLTDA\Empregados.API\obj\Debug\net8.0\ref\Empregados.API.dll
 D:\projetos\EmpresaLTDA\Empregados.API\bin\Debug\net8.0\Empregados.Domain.Infra.dll
 D:\projetos\EmpresaLTDA\Empregados.API\bin\Debug\net8.0\Empregados.Domain.Infra.pdb
+D:\projetos\EmpresaLTDA\Empregados.API\obj\Debug\net8.0\Empregados.API.sourcelink.json

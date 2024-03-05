@@ -9,3 +9,4 @@ D:\projetos\EmpresaLTDA\Empregados.Domain\obj\Debug\net8.0\Empregados.Domain.dll
 D:\projetos\EmpresaLTDA\Empregados.Domain\obj\Debug\net8.0\refint\Empregados.Domain.dll
 D:\projetos\EmpresaLTDA\Empregados.Domain\obj\Debug\net8.0\Empregados.Domain.pdb
 D:\projetos\EmpresaLTDA\Empregados.Domain\obj\Debug\net8.0\ref\Empregados.Domain.dll
+D:\projetos\EmpresaLTDA\Empregados.Domain\obj\Debug\net8.0\Empregados.Domain.sourcelink.json

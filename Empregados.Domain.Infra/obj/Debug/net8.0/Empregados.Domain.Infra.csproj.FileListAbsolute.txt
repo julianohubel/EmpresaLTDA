@@ -13,3 +13,4 @@ D:\projetos\EmpresaLTDA\Empregados.Domain.Infra\obj\Debug\net8.0\Empregados.Doma
 D:\projetos\EmpresaLTDA\Empregados.Domain.Infra\obj\Debug\net8.0\refint\Empregados.Domain.Infra.dll
 D:\projetos\EmpresaLTDA\Empregados.Domain.Infra\obj\Debug\net8.0\Empregados.Domain.Infra.pdb
 D:\projetos\EmpresaLTDA\Empregados.Domain.Infra\obj\Debug\net8.0\ref\Empregados.Domain.Infra.dll
+D:\projetos\EmpresaLTDA\Empregados.Domain.Infra\obj\Debug\net8.0\Empregados.Domain.Infra.sourcelink.json
