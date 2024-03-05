@@ -51,6 +51,19 @@ namespace Empregados.API.Controllers
             var empregado = (Empregado)resultado.Dados;
             return CreatedAtAction(nameof(RecuperarEmpregadoPorId), new { id = empregado.Id }, empregado);
         }
+        
+        [HttpDelete]
+        public ActionResult<CommandResult> ExcluirEmpregado([FromServices] IExcluirEmpregadoHandler handler,
+            [FromBody] ExcluirEmpregadoCommand command)
+        {
+            var resultado = handler.Handle(command);
+
+            if (resultado == null)
+                return NotFound();
+            
+
+            return Ok(resultado);
+        }
     }
 
 }

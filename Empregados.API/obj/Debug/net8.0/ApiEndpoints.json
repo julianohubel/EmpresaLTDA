@@ -73,6 +73,32 @@
   },
   {
     "ContainingType": "Empregados.API.Controllers.EmpregadoController",
+    "Method": "ExcluirEmpregado",
+    "RelativePath": "Empregado",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Empregados.Domain.Commands.ExcluirEmpregadoCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Empregados.Domain.Commands.Results.CommandResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Empregados.API.Controllers.EmpregadoController",
     "Method": "RecuperarEmpregadoPorId",
     "RelativePath": "Empregado/{id}",
     "HttpMethod": "GET",

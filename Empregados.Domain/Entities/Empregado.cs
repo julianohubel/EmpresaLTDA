@@ -21,6 +21,7 @@ namespace Empregados.Domain.Entities
         public string Nome { get; set; }
         public string Departamento { get; set; }
         public string Cargo { get; set; }
+        public bool Excluido { get; set; }
 
         public void AlterarDados(string nome, string cargo, string departamento)
         {
@@ -28,5 +29,11 @@ namespace Empregados.Domain.Entities
             Cargo = cargo;
             Departamento = departamento;
         }
+
+        public void Excluir()
+        {
+            Excluido = true;
+        }
+
     }    
 }

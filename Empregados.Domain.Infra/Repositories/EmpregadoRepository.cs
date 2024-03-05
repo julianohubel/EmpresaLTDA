@@ -23,21 +23,23 @@ namespace Empregados.Domain.Infra.Repositories
             _context.Empregados[index].Nome = empregado.Nome;
             _context.Empregados[index].Cargo = empregado.Cargo;
             _context.Empregados[index].Departamento = empregado.Departamento;
+            _context.Empregados[index].Excluido = empregado.Excluido;
         }
 
         public void Criar(Empregado empregado)
         {
             _context.Empregados.Add(empregado);
         }
+       
 
         public Empregado RecuperarPorId(Guid id)
         {
-            return _context.Empregados.FirstOrDefault(e => e.Id == id);
+            return _context.Empregados.FirstOrDefault(e => e.Id == id && !e.Excluido);
         }
 
         public IEnumerable<Empregado> RecuperarTodos()
         {
-            return _context.Empregados;
+            return _context.Empregados.Where(e => !e.Excluido).OrderBy(e => e.Nome);
         }
     }
 }

@@ -361,10 +361,27 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
-/.vs/EmpresaLTDA/FileContentIndex/1e6a341e-2ecf-41d4-b641-b913804ca846.vsidx
-/.vs/EmpresaLTDA/FileContentIndex/73196096-fba3-4be1-bd9b-edcaf4b5cb4d.vsidx
-/.vs/EmpresaLTDA/FileContentIndex/81d8ac96-bf90-4238-8638-4a00998ae627.vsidx
-/.vs/EmpresaLTDA/FileContentIndex/8e943a88-b8c0-4a2b-bda3-7883667df8c6.vsidx
-/.vs/EmpresaLTDA/FileContentIndex/aed761cc-4449-49e9-97b3-569d1a46b143.vsidx
-/.vs/EmpresaLTDA/v17/.suo
-/.vs/EmpresaLTDA/v17/DocumentLayout.json
+/Empregados.API/bin/
+/.vs/
+/Empregados.API/obj/
+/Empregados.Domain/bin/
+/Empregados.Domain/obj/
+/Empregados.Domain.Infra/bin/*
+/Empregados.Domain.Infra/obj/*
+*.cache
+*.dll
+*.exe
+*.pdb
+/build/
+*.suo
+*.user
+_ReSharper.*/
+*.sdf
+*.opensdf
+*.tlog
+*.log
+TestResult.xml
+*.VisualState.xml
+Version.cs
+Version.h
+Version.cpp

@@ -13,7 +13,7 @@ builder.Services.AddScoped<IRecuperaEmpregadosQueryHandler, RecuperaEmpregadosQu
 builder.Services.AddScoped<IRecuperaEmpregadoPorIdQueryHandler, RecuperaEmpregadoPorIdQueryHandler>();
 builder.Services.AddScoped<ICriarEmpregadoHandler, CriarEmpregadoHandler>();
 builder.Services.AddScoped<IAlterarEmpregadoHandler, AlterarEmpregadoHandler>();
-
+builder.Services.AddScoped<IExcluirEmpregadoHandler, ExcluirEmpregadoHandler>();
 
 builder.Services.AddControllers();
 

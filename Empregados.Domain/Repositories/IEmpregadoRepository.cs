@@ -10,7 +10,7 @@ namespace Empregados.Domain.Repositories
     public interface IEmpregadoRepository
     {
         void Criar(Empregado empregado);
-        void Alterar(Empregado empregado);
+        void Alterar(Empregado empregado);        
         IEnumerable<Empregado> RecuperarTodos();
         Empregado RecuperarPorId(Guid id);
     }
