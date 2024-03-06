@@ -1,4 +1,17 @@
 services:
+  empresaapi:
+    image: "empresaltda"
+    container_name: "empresa_container"
+    build:
+      context: .
+      target: migrations
+    depends_on:
+      - "database"
+    ports:
+      - "5000:8080"
+    restart: "always"
+    environment:
+      - APSNETCORE_ENVIROMENT=Development
   database:
     image: "mysql"
     environment:
