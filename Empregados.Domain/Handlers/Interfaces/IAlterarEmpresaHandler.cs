@@ -1,4 +1,5 @@
-﻿using Empregados.Domain.Commands.Interfaces;
+﻿using Empregados.Domain.Commands;
+using Empregados.Domain.Commands.Interfaces;
 using Empregados.Domain.Entities;
 using System;
 using System.Collections.Generic;
@@ -10,6 +11,6 @@ namespace Empregados.Domain.Handlers.Interfaces
 {
     public interface IAlterarEmpresaHandler
     {
-        ICommandResult Handle(Empresa empresa);
+        ICommandResult Handle(AlterarEmpresaCommand command);
     }
 }

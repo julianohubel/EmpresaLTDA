@@ -1,4 +1,5 @@
-﻿using Empregados.Domain.Commands.Interfaces;
+﻿using Empregados.Domain.Commands;
+using Empregados.Domain.Commands.Interfaces;
 using Empregados.Domain.Commands.Results;
 using Empregados.Domain.Entities;
 using Empregados.Domain.Handlers.Interfaces;
@@ -20,9 +21,15 @@ namespace Empregados.Domain.Handlers
             _empresaRepository = empresaRepository;
         }
 
-        public ICommandResult Handle(Empresa empresa)
+        public ICommandResult Handle(AlterarEmpresaCommand command)
         {
-             _empresaRepository.Alterar(empresa);
+            var empresa = _empresaRepository.Recuperar();
+            if (empresa == null)
+                return null;
+
+            empresa.AlterarDados(command.Nome, command.Endereco, command.Telefone);
+
+            _empresaRepository.Alterar(empresa);
 
             return new CommandResult(true, "Empresa alterada com sucesso", empresa);
         }

@@ -7,7 +7,6 @@ using Empregados.Domain.Repositories;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddSingleton<EmpregadosContext>();
 builder.Services.AddScoped<IEmpregadoRepository, EmpregadoRepository>();
 builder.Services.AddScoped<IRecuperaEmpregadosQueryHandler, RecuperaEmpregadosQueryHandler>();
 builder.Services.AddScoped<IRecuperaEmpregadoPorIdQueryHandler, RecuperaEmpregadoPorIdQueryHandler>();
@@ -23,7 +22,6 @@ builder.Services.AddDbContext<DataContext>();
 builder.Services.AddControllers();
 
 var app = builder.Build();
-
 // Configure the HTTP request pipeline.
 
 app.UseHttpsRedirection();

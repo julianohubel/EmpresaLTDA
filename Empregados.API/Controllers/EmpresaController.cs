@@ -1,9 +1,14 @@
-﻿using Empregados.Domain.Entities;
+﻿using Empregados.Domain.Commands;
+using Empregados.Domain.Commands.Results;
+using Empregados.Domain.Entities;
 using Empregados.Domain.Handlers.Interfaces;
 using Microsoft.AspNetCore.Mvc;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace Empregados.API.Controllers
 {
+    [ApiController]
+    [Route("[controller]")]
     public class EmpresaController : ControllerBase
     {
         [HttpGet]        
@@ -13,10 +18,17 @@ namespace Empregados.API.Controllers
         }
 
         [HttpPut]
-        public ActionResult<Empresa> AlteraEmpresa([FromServices] IAlterarEmpresaHandler handler,
-            [FromBody] Empresa empresa)
+        public ActionResult<CommandResult> AlteraEmpresa([FromServices] IAlterarEmpresaHandler handler,
+            [FromBody] AlterarEmpresaCommand command)
         {
-            return Ok(handler.Handle(empresa));
+
+
+            var resultado = handler.Handle(command);
+
+            if (resultado == null)
+                return NotFound();
+            
+            return CreatedAtAction(nameof(RecuperarEmpresa), resultado);
         }
 
     }

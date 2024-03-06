@@ -1,6 +1,7 @@
 ﻿using Empregados.Domain.Entities;
 using Empregados.Domain.Infra.Contexts;
 using Empregados.Domain.Repositories;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,20 +12,21 @@ namespace Empregados.Domain.Infra.Repositories
 {
     public class EmpresaRepository : IEmpresaRepository
     {
-        private readonly EmpresaContext _context;
+        private readonly DataContext _context;
 
-        public EmpresaRepository(EmpresaContext context)
+        public EmpresaRepository(DataContext context)
         {
             _context = context;
         }
         public void Alterar(Empresa empresa)
         {
-            _context.Empresa = empresa;
+            _context.Entry(empresa).State = EntityState.Modified;
+            _context.SaveChanges();
         }
 
         public Empresa Recuperar()
         {
-            return _context.Empresa;
+            return _context.Empresas.AsNoTracking().FirstOrDefault();
         }
     }
 }

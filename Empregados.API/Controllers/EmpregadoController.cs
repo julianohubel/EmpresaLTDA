@@ -36,7 +36,7 @@ namespace Empregados.API.Controllers
         {
             var resultado = handler.Handle(command);
             var empregado = (Empregado)resultado.Dados;
-            return CreatedAtAction(nameof(RecuperarEmpregadoPorId), new { id = empregado.Id }, empregado);
+            return CreatedAtAction(nameof(RecuperarEmpregadoPorId), new { id = empregado.Id }, resultado);
         }
 
         [HttpPut]
@@ -49,7 +49,7 @@ namespace Empregados.API.Controllers
                 return NotFound();
 
             var empregado = (Empregado)resultado.Dados;
-            return CreatedAtAction(nameof(RecuperarEmpregadoPorId), new { id = empregado.Id }, empregado);
+            return CreatedAtAction(nameof(RecuperarEmpregadoPorId), new { id = empregado.Id }, resultado);
         }
         
         [HttpDelete]

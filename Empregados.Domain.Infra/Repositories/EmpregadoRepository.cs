@@ -1,6 +1,7 @@
 ﻿using Empregados.Domain.Entities;
 using Empregados.Domain.Infra.Contexts;
 using Empregados.Domain.Repositories;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,35 +12,33 @@ namespace Empregados.Domain.Infra.Repositories
 {
     public class EmpregadoRepository : IEmpregadoRepository
     {
-        private readonly EmpregadosContext _context;
+        private readonly DataContext _context;
 
-        public EmpregadoRepository(EmpregadosContext context)
+        public EmpregadoRepository(DataContext context)
         {
             _context = context;
         }
         public void Alterar(Empregado empregado)
         {
-             var index = _context.Empregados.FindIndex(e => e.Id == empregado.Id);
-            _context.Empregados[index].Nome = empregado.Nome;
-            _context.Empregados[index].Cargo = empregado.Cargo;
-            _context.Empregados[index].Departamento = empregado.Departamento;
-            _context.Empregados[index].Excluido = empregado.Excluido;
+            _context.Entry(empregado).State = EntityState.Modified;
+            _context.SaveChanges();
         }
 
         public void Criar(Empregado empregado)
         {
             _context.Empregados.Add(empregado);
+            _context.SaveChanges();
         }
        
 
         public Empregado RecuperarPorId(Guid id)
         {
-            return _context.Empregados.FirstOrDefault(e => e.Id == id && !e.Excluido);
+            return _context.Empregados.AsNoTracking().FirstOrDefault(e => e.Id == id && !e.Excluido);
         }
 
         public IEnumerable<Empregado> RecuperarTodos()
         {
-            return _context.Empregados.Where(e => !e.Excluido).OrderBy(e => e.Nome);
+            return _context.Empregados.AsNoTracking().Where(e => !e.Excluido).OrderBy(e => e.Nome);
         }
     }
 }
