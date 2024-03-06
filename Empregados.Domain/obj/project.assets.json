@@ -8,20 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Usuário\\.nuget\\packages\\": {}
+    "/home/codespace/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\projetos\\EmpresaLTDA\\Empregados.Domain\\Empregados.Domain.csproj",
+      "projectUniqueName": "/workspaces/EmpresaLTDA/Empregados.Domain/Empregados.Domain.csproj",
       "projectName": "Empregados.Domain",
-      "projectPath": "D:\\projetos\\EmpresaLTDA\\Empregados.Domain\\Empregados.Domain.csproj",
-      "packagesPath": "C:\\Users\\Usuário\\.nuget\\packages\\",
-      "outputPath": "D:\\projetos\\EmpresaLTDA\\Empregados.Domain\\obj\\",
+      "projectPath": "/workspaces/EmpresaLTDA/Empregados.Domain/Empregados.Domain.csproj",
+      "packagesPath": "/home/codespace/.nuget/packages/",
+      "outputPath": "/workspaces/EmpresaLTDA/Empregados.Domain/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Usuário\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/home/codespace/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -39,11 +38,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -65,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

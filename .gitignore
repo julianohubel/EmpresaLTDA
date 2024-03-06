@@ -445,3 +445,13 @@ Version.cpp
 /Empregados.Domain/obj/Debug/net8.0/Empregados.Domain.csproj.FileListAbsolute.txt
 /Empregados.Domain.Infra/bin/Debug/net8.0/Empregados.Domain.Infra.deps.json
 /Empregados.Domain.Infra/obj/Debug/net8.0/Empregados.Domain.Infra.csproj.FileListAbsolute.txt
+Empregados.API/obj/Debug/net8.0/Empregados.API.GeneratedMSBuildEditorConfig.editorconfig
+Empregados.API/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.Empregados.API.props
+Empregados.API/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.Empregados.API.props
+Empregados.Domain/obj/Empregados.Domain.csproj.nuget.dgspec.json
+Empregados.Domain/obj/Empregados.Domain.csproj.nuget.g.props
+Empregados.Domain/obj/project.assets.json
+Empregados.Domain/obj/project.nuget.cache
+Empregados.Domain/obj/Debug/net8.0/Empregados.Domain.assets.cache
+Empregados.Domain/obj/Debug/net8.0/Empregados.Domain.GeneratedMSBuildEditorConfig.editorconfig
+Empregados.Domain.Infra/obj/Debug/net8.0/Empregados.Domain.Infra.GeneratedMSBuildEditorConfig.editorconfig

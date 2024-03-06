@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "g6L9hz60PljlKEl3ieldotfaTveC4bdEJff0is+cCt7CLP3Zg3fWH7rCHccp+IpgMZojKc6plaUjNmiEH3HwCQ==",
+  "dgSpecHash": "Ci68UIr7khW40s5ttzGeWRmDwR4djuzA+iDzVW0TgguxGlQsmMv38D1pzd2HDMtzJbKPUMTM96y8MIgEYkGkPg==",
   "success": true,
-  "projectFilePath": "D:\\projetos\\EmpresaLTDA\\Empregados.Domain\\Empregados.Domain.csproj",
+  "projectFilePath": "/workspaces/EmpresaLTDA/Empregados.Domain/Empregados.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
