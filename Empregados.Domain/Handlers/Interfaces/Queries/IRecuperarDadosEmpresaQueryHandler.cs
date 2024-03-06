@@ -5,10 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Empregados.Domain.Handlers.Interfaces
+namespace Empregados.Domain.Handlers.Interfaces.Queries
 {
-    public interface IRecuperaEmpregadoPorIdQueryHandler
+    public interface IRecuperarDadosEmpresaQueryHandler
     {
-        Empregado Handle(Guid id);
+
+        Empresa Handle();
     }
 }

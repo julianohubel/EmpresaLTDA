@@ -1,8 +1,6 @@
-﻿
+﻿using Empregados.Domain.Entities;
 
-using Empregados.Domain.Entities;
-
-namespace Empregados.Domain.Handlers.Interfaces
+namespace Empregados.Domain.Handlers.Interfaces.Queries
 {
     public interface IRecuperaEmpregadosQueryHandler
     {

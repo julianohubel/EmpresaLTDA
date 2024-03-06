@@ -2,6 +2,7 @@
 using Empregados.Domain.Commands.Results;
 using Empregados.Domain.Entities;
 using Empregados.Domain.Handlers.Interfaces;
+using Empregados.Domain.Handlers.Interfaces.Queries;
 using Empregados.Domain.Repositories;
 using Microsoft.AspNetCore.Mvc;
 

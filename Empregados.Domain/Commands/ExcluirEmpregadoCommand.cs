@@ -8,6 +8,11 @@ namespace Empregados.Domain.Commands
 {
     public class ExcluirEmpregadoCommand
     {
+
+        public ExcluirEmpregadoCommand(Guid id)
+        {
+            Id = id;
+        }
         public Guid Id { get; set; }
     }
 }

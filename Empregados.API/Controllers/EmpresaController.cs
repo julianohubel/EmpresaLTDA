@@ -2,6 +2,7 @@
 using Empregados.Domain.Commands.Results;
 using Empregados.Domain.Entities;
 using Empregados.Domain.Handlers.Interfaces;
+using Empregados.Domain.Handlers.Interfaces.Queries;
 using Microsoft.AspNetCore.Mvc;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
@@ -12,7 +13,7 @@ namespace Empregados.API.Controllers
     public class EmpresaController : ControllerBase
     {
         [HttpGet]        
-        public ActionResult<Empresa> RecuperarEmpresa([FromServices] IRecuperarDadosEmpresaQuery query)
+        public ActionResult<Empresa> RecuperarEmpresa([FromServices] IRecuperarDadosEmpresaQueryHandler query)
         {
             return Ok(query.Handle());
         }

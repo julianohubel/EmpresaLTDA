@@ -8,8 +8,9 @@ namespace Empregados.Domain.Commands
 {
     public class AlterarEmpregadoCommand
     {
-        public AlterarEmpregadoCommand(string nome, string cargo, string departamento)
+        public AlterarEmpregadoCommand(Guid id, string nome, string cargo, string departamento)
         {
+            Id = id;
             Nome = nome;
             Cargo = cargo;
             Departamento = departamento;
