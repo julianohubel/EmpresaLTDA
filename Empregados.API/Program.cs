@@ -14,6 +14,11 @@ builder.Services.AddScoped<IRecuperaEmpregadoPorIdQueryHandler, RecuperaEmpregad
 builder.Services.AddScoped<ICriarEmpregadoHandler, CriarEmpregadoHandler>();
 builder.Services.AddScoped<IAlterarEmpregadoHandler, AlterarEmpregadoHandler>();
 builder.Services.AddScoped<IExcluirEmpregadoHandler, ExcluirEmpregadoHandler>();
+builder.Services.AddScoped<IEmpresaRepository, EmpresaRepository>();
+builder.Services.AddScoped<IRecuperarDadosEmpresaQuery, RecuperarDadosEmpresaQuery>();
+builder.Services.AddScoped<IAlterarEmpresaHandler, AlterarEmpresaHandler>();
+
+builder.Services.AddDbContext<DataContext>();
 
 builder.Services.AddControllers();
 
