@@ -435,3 +435,13 @@ Version.cpp
 /Empregados.API/obj/Empregados.API.csproj.nuget.g.targets
 /Empregados.API/obj/project.assets.json
 /Empregados.API/obj/project.nuget.cache
+/.vs/EmpresaLTDA/v17/.futdcache.v2
+/Empregados.API/bin/Debug/net8.0/appsettings.Development.json
+/Empregados.API/bin/Debug/net8.0/Empregados.API.deps.json
+/Empregados.API/bin/Debug/net8.0/Empregados.API.runtimeconfig.json
+/Empregados.API/obj/Debug/net8.0/ApiEndpoints.json
+/Empregados.API/obj/Debug/net8.0/Empregados.API.csproj.FileListAbsolute.txt
+/Empregados.API/obj/Debug/net8.0/Empregados.API.genruntimeconfig.cache
+/Empregados.Domain/obj/Debug/net8.0/Empregados.Domain.csproj.FileListAbsolute.txt
+/Empregados.Domain.Infra/bin/Debug/net8.0/Empregados.Domain.Infra.deps.json
+/Empregados.Domain.Infra/obj/Debug/net8.0/Empregados.Domain.Infra.csproj.FileListAbsolute.txt
