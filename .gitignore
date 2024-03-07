@@ -456,3 +456,7 @@ Empregados.Domain/obj/Debug/net8.0/Empregados.Domain.assets.cache
 Empregados.Domain/obj/Debug/net8.0/Empregados.Domain.GeneratedMSBuildEditorConfig.editorconfig
 Empregados.Domain.Infra/obj/Debug/net8.0/Empregados.Domain.Infra.GeneratedMSBuildEditorConfig.editorconfig
 Empregados.API/bin/Debug/net8.0/appsettings.json
+/Empregados.API/obj/Debug/net8.0/Empregados.API.GeneratedMSBuildEditorConfig.editorconfig
+/Empregados.Domain.Infra/obj/Debug/net8.0/Empregados.Domain.Infra.GeneratedMSBuildEditorConfig.editorconfig
+/Empregados.Domain/obj/Debug/net8.0/Empregados.Domain.assets.cache
+/Empregados.Domain/obj/Debug/net8.0/Empregados.Domain.GeneratedMSBuildEditorConfig.editorconfig
