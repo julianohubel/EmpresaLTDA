@@ -5,7 +5,6 @@ using Empregados.Domain.Handlers.Queries;
 using Empregados.Domain.Infra.Contexts;
 using Empregados.Domain.Infra.Repositories;
 using Empregados.Domain.Repositories;
-using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,19 +22,12 @@ builder.Services.AddScoped<IAlterarEmpresaHandler, AlterarEmpresaHandler>();
 builder.Services.AddDbContext<DataContext>();
 
 builder.Services.AddControllers();
+builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
-// Configure the HTTP request pipeline.
-// using (var scope = app.Services.CreateScope())
-// {
-//     var services = scope.ServiceProvider;
-//     var context = services.GetRequiredService<DataContext>();
-//     if (context.Database.GetPendingMigrations().Any())
-//     {
-//         context.Database.Migrate();
-//     }
-// }
 
+app.UseSwagger();
+app.UseSwaggerUI();
 
 app.UseHttpsRedirection();
 
