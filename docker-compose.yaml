@@ -4,7 +4,6 @@ services:
     container_name: "empresa_container"
     build:
       context: .
-      target: migrations
     depends_on:
       - "database"
     ports:
@@ -12,6 +11,7 @@ services:
     restart: "always"
     environment:
       - APSNETCORE_ENVIROMENT=Development
+      # - ConnectionStrings__MySQL=server=127.0.0.1;Port=3306;uid=root;pwd=master;database=sys
   database:
     image: "mysql"
     environment:

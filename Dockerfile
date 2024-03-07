@@ -26,14 +26,14 @@ RUN dotnet build --no-restore
 
 ENTRYPOINT ["dotnet", "Empregados.Domain.Tests", "--logger:trx", "--no-build"]
 
-FROM build as migrations
-RUN dotnet tool install --global dotnet-ef
-ENV PATH="${PATH}:/root/.dotnet/tools"
-ENTRYPOINT dotnet ef database update --project Empregados.Domain.Infra --startup-project Empregados.API
+# FROM build as migrations
+# RUN dotnet tool install --global dotnet-ef
+# ENV PATH="${PATH}:/root/.dotnet/tools"
+# ENTRYPOINT dotnet ef database update --project Empregados.Domain.Infra --startup-project Empregados.API
 
 FROM build AS publish
 WORKDIR /source/Empregados.API
-RUN dotnet publish -c Debug -o /app
+RUN dotnet publish -c Release -o /app
 
 
 # final stage/image
