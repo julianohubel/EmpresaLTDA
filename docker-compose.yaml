@@ -12,7 +12,8 @@ services:
     environment:
       - APSNETCORE_ENVIROMENT=Development
   database:
-    image: "mysql"
+    image: "mysql:8.0"
+    command: --default-authentication-plugin=mysql_native_password
     environment:
       MYSQL_ROOT_PASSWORD: master
     ports:
